@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Repertoire.Modifier">
+    <ContentPage.Content>
+        <StackLayout Margin="{StaticResource PageMargin}">
+            <Editor x:Name="Nom"
+                    Text="{Binding Nom}"/>
+            <Editor x:Name="prenom"
+                    Text="{Binding Prenom}"/>
+            <Editor x:Name="tel"
+                    Text="{Binding Tel}"/>
+            <Editor x:Name="mail"
+                    Text="{Binding mail}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Text="Modifier"
+                    Clicked="Modify_Clicked"/>
+                <Button Grid.Row="0" Grid.ColumnSpan="1" Text="Supprimer"
+                    Clicked="Supp_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

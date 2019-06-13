@@ -34,9 +34,9 @@ namespace Repertoire
 
         }
 
-        private void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
+        async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-
+            await Navigation.PushAsync(new Modifier((Contact)ListView.SelectedItem));
         }
 
         protected override async void OnAppearing()
@@ -46,15 +46,5 @@ namespace Repertoire
             
         }
 
-        async void SupprimerContact(object sender, EventArgs e)
-        {
-            bool answer = await DisplayAlert("Supprimer?", "Voulez vous supprimer le contact", "Oui", "Non");
-            if (answer)
-            {
-                var C = (Contact)ListView.SelectedItem;
-                await App.Database.DeleteContactAsync(C);
-                OnAppearing();
-            }
-        }
     }
 }

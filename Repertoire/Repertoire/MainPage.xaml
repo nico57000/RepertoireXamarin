@@ -15,8 +15,6 @@
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="-"
-                     Clicked="SupprimerContact"/>
         <ToolbarItem Text="+"
                      Clicked="ToolbarItem_Clicked" />
     </ContentPage.ToolbarItems>
