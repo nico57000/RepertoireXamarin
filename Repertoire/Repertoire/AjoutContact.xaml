@@ -6,27 +6,31 @@
              mc:Ignorable="d"
              x:Class="Repertoire.AjoutContact">
     <ContentPage.Content>
-        <StackLayout Margin="{StaticResource PageMargin}">
-            <Editor x:Name="Nom" Placeholder="Nom"
-                    Text="{Binding Nom}"/>
-            <Editor x:Name="prenom" Placeholder="Prénom"
-                    Text="{Binding Prenom}"/>
-            <Editor x:Name="tel" Placeholder="Téléphone"
-                    Text="{Binding Tel}"/>
-            <Editor x:Name="mail" Placeholder="e-mail"
-                    Text="{Binding mail}"/>
-            <Editor x:Name="Adresse" Placeholder="Adress"
-                    Text="{Binding Adress}"/>
-            <Editor x:Name="Twitter" Placeholder="Twitter"
-                    Text="{Binding PseudoTwitter}"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Button Text="Save"
-                    Clicked="Save_Clicked" />
-            </Grid>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="{StaticResource PageMargin}">
+                <Editor x:Name="Nom" Placeholder="Nom"
+                        Text="{Binding Nom}"/>
+                <Editor x:Name="prenom" Placeholder="Prénom"
+                        Text="{Binding Prenom}"/>
+                <Editor x:Name="tel" Placeholder="Téléphone"
+                        Text="{Binding Tel}"/>
+                <Editor x:Name="mail" Placeholder="e-mail"
+                        Text="{Binding mail}"/>
+                <Editor x:Name="Ville" Placeholder="Ville"
+                        Text="{Binding Ville}"/>
+                <Editor x:Name="Adresse" Placeholder="Adress"
+                        Text="{Binding Adress}"/>
+                <Editor x:Name="Twitter" Placeholder="Twitter"
+                        Text="{Binding PseudoTwitter}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Save"
+                        Clicked="Save_Clicked" />
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

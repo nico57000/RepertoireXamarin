@@ -6,32 +6,36 @@
              mc:Ignorable="d"
              x:Class="Repertoire.Modifier">
     <ContentPage.Content>
-        <StackLayout Margin="{StaticResource PageMargin}">
-            <Editor x:Name="Nom"
-                    Text="{Binding Nom}"/>
-            <Editor x:Name="prenom"
-                    Text="{Binding Prenom}"/>
-            <Editor x:Name="tel"
-                    Text="{Binding Tel}"/>
-            <Editor x:Name="mail"
-                    Text="{Binding mail}"/>
-            <Editor x:Name="Adresse"
-                    Text="{Binding Adress}"/>
-            <Editor x:Name="Twitter"
-                    Text="{Binding PseudoTwitter}"/>
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"/>
-                </Grid.RowDefinitions>
-                <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Text="Modifier"
-                    Clicked="Modify_Clicked"/>
-                <Button Grid.Row="0" Grid.ColumnSpan="1" Text="Supprimer"
-                    Clicked="Supp_Clicked"/>
-            </Grid>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="{StaticResource PageMargin}">
+                <Editor x:Name="Nom"
+                        Text="{Binding Nom}"/>
+                <Editor x:Name="prenom"
+                        Text="{Binding Prenom}"/>
+                <Editor x:Name="tel"
+                        Text="{Binding Tel}"/>
+                <Editor x:Name="mail"
+                        Text="{Binding mail}"/>
+                <Editor x:Name="Ville"
+                        Text="{Binding Ville}"/>
+                <Editor x:Name="Adresse"
+                        Text="{Binding Adress}"/>
+                <Editor x:Name="Twitter"
+                        Text="{Binding PseudoTwitter}"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Text="Modifier"
+                        Clicked="Modify_Clicked"/>
+                    <Button Grid.Row="0" Grid.ColumnSpan="1" Text="Supprimer"
+                        Clicked="Supp_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

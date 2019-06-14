@@ -26,6 +26,8 @@ namespace Repertoire.Modele
 
         public string Adress { get; set; }
 
+        public string Ville { get; set; }
+
         public string PseudoTwitter { get; set; }
         public override string ToString()
         {

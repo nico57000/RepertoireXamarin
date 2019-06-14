@@ -36,7 +36,7 @@ namespace Repertoire
 
         async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            await Navigation.PushAsync(new Modifier((Contact)ListView.SelectedItem));
+            await Navigation.PushAsync(new View((Contact)ListView.SelectedItem));
         }
 
         protected override async void OnAppearing()

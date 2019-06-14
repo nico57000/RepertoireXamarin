@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Repertoire.View">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="Modify" Text="Modifier"
+                     Clicked="Modify_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label x:Name="Nom" Text="{Binding Nom}"/>
+                <Label x:Name="Prenom" Text="{Binding Prenom}"/>
+                <Label x:Name="Tel" Text="{Binding Tel}"/>
+                <Label x:Name="Mail" Text="{Binding mail}"/>
+                <Label x:Name="Ville" Text="{Binding Ville}"/>
+                <Label x:Name="Adresse" Text="{Binding Adresse}"/>
+                <Label x:Name="Twitter" Text="{Binding PseudoTwitter}"/>
+                
+                <Label x:Name="Meteo" Text="Météo"/>
+                <Label Grid.Row="2"
+               Text="Location:" />
+                <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="{Binding Title}" />
+                <Label Grid.Row="3"
+               Text="Temperature:" />
+                <Label Grid.Row="3"
+               Grid.Column="1"
+               Text="{Binding Main.Temperature}" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

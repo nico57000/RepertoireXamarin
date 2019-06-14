@@ -22,6 +22,7 @@ namespace Repertoire
             prenom.Text = contact.Prenom;
             tel.Text = contact.Tel;
             mail.Text = contact.mail;
+            Ville.Text = contact.Ville;
             Adresse.Text = contact.Adress;
             Twitter.Text = contact.PseudoTwitter;
         }
@@ -32,9 +33,11 @@ namespace Repertoire
             contact.Prenom = prenom.Text;
             contact.Tel = tel.Text;
             contact.mail = mail.Text;
+            contact.Ville = Ville.Text;
+            contact.Adress = Adresse.Text;
+            contact.PseudoTwitter = Twitter.Text;
             await App.Database.SaveContactAsync(contact);
-            await Navigation.PopAsync();
-
+            await Navigation.PopToRootAsync();
         }
 
         async void Supp_Clicked(object sender, EventArgs e)
