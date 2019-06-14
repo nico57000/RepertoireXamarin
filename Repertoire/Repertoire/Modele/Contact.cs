@@ -23,6 +23,10 @@ namespace Repertoire.Modele
         public string Tel { get; set; }
 
         public string ImageUrl { get; set; }
+
+        public string Adress { get; set; }
+
+        public string PseudoTwitter { get; set; }
         public override string ToString()
         {
             return Nom + " " + Prenom;

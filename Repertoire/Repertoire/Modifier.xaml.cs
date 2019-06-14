@@ -22,13 +22,15 @@ namespace Repertoire
             prenom.Text = contact.Prenom;
             tel.Text = contact.Tel;
             mail.Text = contact.mail;
+            Adresse.Text = contact.Adress;
+            Twitter.Text = contact.PseudoTwitter;
         }
 
         async void Modify_Clicked(object sender, EventArgs e)
         {
             contact.Nom = Nom.Text;
             contact.Prenom = prenom.Text;
-            contact.Prenom = tel.Text;
+            contact.Tel = tel.Text;
             contact.mail = mail.Text;
             await App.Database.SaveContactAsync(contact);
             await Navigation.PopAsync();

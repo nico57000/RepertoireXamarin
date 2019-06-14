@@ -15,6 +15,10 @@
                     Text="{Binding Tel}"/>
             <Editor x:Name="mail" Placeholder="e-mail"
                     Text="{Binding mail}"/>
+            <Editor x:Name="Adresse" Placeholder="Adress"
+                    Text="{Binding Adress}"/>
+            <Editor x:Name="Twitter" Placeholder="Twitter"
+                    Text="{Binding PseudoTwitter}"/>
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
