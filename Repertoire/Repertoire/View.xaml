@@ -12,14 +12,29 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label x:Name="Nom" Text="{Binding Nom}"/>
-                <Label x:Name="Prenom" Text="{Binding Prenom}"/>
-                <Label x:Name="Tel" Text="{Binding Tel}"/>
-                <Label x:Name="Mail" Text="{Binding mail}"/>
-                <Label x:Name="Ville" Text="{Binding Ville}"/>
-                <Label x:Name="Adresse" Text="{Binding Adresse}"/>
-                <Label x:Name="Twitter" Text="{Binding PseudoTwitter}"/>
-                
+                <Grid BackgroundColor="Gray">
+                    <Label HorizontalTextAlignment="End" Grid.Row="1" Text="Nom :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="2" x:Name="Nom" Text="{Binding Nom}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="2" Text="Prénom :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="2" x:Name="Prenom" Text="{Binding Prenom}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="3" Text="Tel :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="2" x:Name="Tel" Text="{Binding Tel}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="4" Text="Mail :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="4" Grid.Column="2" x:Name="Mail" Text="{Binding mail}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="5" Text="Ville :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="5" Grid.Column="2" x:Name="Ville" Text="{Binding Ville}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="6" Text="Adresse :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="6" Grid.Column="2" x:Name="Adresse" Text="{Binding Adresse}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                    <Label HorizontalTextAlignment="End" Grid.Row="7" Text="Twitter :"/>
+                    <Label HorizontalTextAlignment="Center" Grid.Row="7" Grid.Column="2" x:Name="Twitter" Text="{Binding PseudoTwitter}"/>
+                    <Label Grid.Row="1" Grid.Column="3"/>
+                </Grid>
                 <Label x:Name="Meteo" Text="Météo"/>
                 <Label Grid.Row="2"
                Text="Location:" />

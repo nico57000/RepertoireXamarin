@@ -47,7 +47,7 @@ namespace Repertoire
             {
                 await App.Database.DeleteContactAsync(contact);
                 OnAppearing();
-                await Navigation.PopAsync();
+                await Navigation.PopToRootAsync();
             }
         }
     }

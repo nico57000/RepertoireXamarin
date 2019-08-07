@@ -8,20 +8,20 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="{StaticResource PageMargin}">
-                <Editor x:Name="Nom"
-                        Text="{Binding Nom}"/>
-                <Editor x:Name="prenom"
-                        Text="{Binding Prenom}"/>
-                <Editor x:Name="tel"
-                        Text="{Binding Tel}"/>
-                <Editor x:Name="mail"
-                        Text="{Binding mail}"/>
-                <Editor x:Name="Ville"
-                        Text="{Binding Ville}"/>
-                <Editor x:Name="Adresse"
-                        Text="{Binding Adress}"/>
-                <Editor x:Name="Twitter"
-                        Text="{Binding PseudoTwitter}"/>
+                <Entry x:Name="Nom"
+                        Text="{Binding Nom}" Placeholder="Nom"/>
+                <Entry x:Name="prenom"
+                        Text="{Binding Prenom}" Placeholder="Prénom"/>
+                <Entry x:Name="tel"
+                        Text="{Binding Tel}" Placeholder="Tel"/>
+                <Entry x:Name="mail"
+                        Text="{Binding mail}" Placeholder="mail"/>
+                <Entry x:Name="Ville"
+                        Text="{Binding Ville}" Placeholder="Ville"/>
+                <Entry x:Name="Adresse"
+                        Text="{Binding Adress}" Placeholder="Adress"/>
+                <Entry x:Name="Twitter"
+                        Text="{Binding PseudoTwitter}" Placeholder="Pseudo Twitter"/>
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />

@@ -24,6 +24,7 @@ namespace Repertoire
             contact = C;
             Nom.Text = C.Nom;
             Prenom.Text = C.Prenom;
+            Mail.Text = C.mail;
             Tel.Text = C.Tel;
             Ville.Text = C.Ville;
             Adresse.Text = C.Adress;
